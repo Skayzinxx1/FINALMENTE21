@@ -7,7 +7,98 @@
   box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
 }
+.colecao {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  padding: 60px 5%;
+  flex-wrap: wrap;
+}
 
+
+.colecao .texto {
+  flex: 1 1 400px;
+  max-width: 550px;
+}
+
+.colecao .sub {
+  color: #0099cc; 
+  font-weight: 600;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+.colecao h2 {
+  font-size: 2.7rem;
+  margin-bottom: 15px;
+}
+
+.colecao p {
+  font-size: 1.2rem;
+  margin-bottom: 25px;
+  line-height: 1.5;
+}
+
+
+.botoes {
+  display: flex;
+  gap: 15px;
+}
+
+.butao {
+  padding: 12px 26px;
+  border-radius: 50px;
+  text-decoration: none;
+  border: 2px solid #0099cc;
+  transition: 0.3s;
+  font-size: 1rem;
+}
+
+.preca {
+  background: #0099cc;
+  color: white;
+}
+
+.preco {
+  background: transparent;
+  color: #0099cc;
+}
+
+.butao:hover {
+  transform: scale(1.05);
+  filter: brightness(1.15);
+}
+
+
+.colecao .imagem {
+  flex: 1 1 400px;
+  text-align: center;
+}
+
+.colecao .imagem img {
+  width: 100%;
+  max-width: 420px;
+  border-radius: 15px;
+}
+
+
+@media (max-width: 900px) {
+  .colecao {
+    text-align: center;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .botoes {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .colecao h2 {
+    font-size: 2.2rem;
+  }
+}
 
 body {
   background: #ffffff;
@@ -583,4 +674,5 @@ footer {
 
 .hamburger.active::after {
   transform: rotate(-45deg) translate(5px, -5px);
+
 }
